@@ -1,0 +1,22 @@
+/* SplitLayoutSection.module.css */
+
+.horizontal {
+  display: flex;
+  flex-direction: row;/* You can change this to a gradient if needed */
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column; /* You can change this to a gradient if needed */
+}
+
+.rounded {
+  border-radius: 50%; /* Makes the image rounded */
+  aspect-ratio: 1 / 1;
+}
+
+@media only screen and (max-width: 976px) {
+  .horizontal {
+    flex-direction: column;
+  }
+}

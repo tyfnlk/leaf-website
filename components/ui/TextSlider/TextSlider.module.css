@@ -1,0 +1,28 @@
+.text_slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  align-items: center;   /* Center text horizontally */
+  /* overflow: hidden; */
+  height: 100%; 
+  width: 100%;
+}
+
+.text_item {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;  /* Absolute positioning for animation */
+  top: 30%;            /* Center vertically initially */
+  transform: translateY(-50%); /* Offset to appear centered */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);  /* Move word to the top */
+  transition-delay: 1s;      /* Delay opacity change after movement */
+}
